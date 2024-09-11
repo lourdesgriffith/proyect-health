@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Health"
         tools:targetApi="31">
         <activity
+            android:name=".confirmar_paciente"
+            android:exported="false" />
+        <activity
             android:name=".registrar_pasiente"
             android:exported="false" />
         <activity
