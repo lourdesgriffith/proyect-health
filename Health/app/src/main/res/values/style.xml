@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo por defecto -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Personalización general de tu app -->
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#3F51B5</item>
+    </style>
+
+    <!-- Estilo personalizado para diálogos -->
+    <style name="CustomAlertDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/DialogButton</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DialogButton</item>
+    </style>
+
+    <style name="DialogButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#FFFFFF</item> <!-- Color de texto -->
+    </style>
+
+    <style name="CustomCalendarView">
+        <!-- Cambia el color del texto -->
+        <item name="android:textColor">#000000</item>
+        <!-- Cambia el color del texto de las fechas seleccionadas -->
+        <item name="android:textColorPrimary">#000000</item>
+        <!-- Cambia el color del texto de los días del mes actual -->
+        <item name="android:textColorSecondary">#000000</item>
+    </style>
+</resources>

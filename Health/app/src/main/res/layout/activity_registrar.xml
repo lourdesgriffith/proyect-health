@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3288CA"
+    android:background="#36D6E0"
     tools:context=".registrar">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Registrar"
-        android:textColor="#000000"
+        android:textColor="#171616"
         android:textSize="35dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,11 +35,11 @@
         app:layout_constraintVertical_bias="0.43">
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/correotxt"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
-            android:background="#FFFFFF"
+            android:background="@drawable/delinieado"
             android:ems="10"
             android:hint="Correo Electronico"
             android:inputType="text"
@@ -48,11 +48,11 @@
             android:textColorHint="#453E3E" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/nombreusuariotxt"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
-            android:background="#FFFFFF"
+            android:background="@drawable/delinieado"
             android:ems="10"
             android:hint="Nombre de Usuario"
             android:inputType="text"
@@ -61,11 +61,11 @@
             android:textColorHint="#453E3E" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/clavetxt"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
-            android:background="#FFFFFF"
+            android:background="@drawable/delinieado"
             android:ems="10"
             android:hint="Contraseña"
             android:inputType="textPassword"
@@ -74,11 +74,11 @@
             android:textColorHint="#453E3E" />
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/repetirClave"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
-            android:background="#FFFFFF"
+            android:background="@drawable/delinieado"
             android:ems="10"
             android:hint="Repetir Contraseña"
             android:inputType="textPassword"
@@ -92,6 +92,7 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
         android:text="Acepto termino y condiciones"
         android:textColor="#000000"
         android:textSize="16sp"
@@ -107,8 +108,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#075490"
+        android:onClick="validar"
         android:text="Listo"
         android:textColor="#FFFFFF"
+        app:cornerRadius="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

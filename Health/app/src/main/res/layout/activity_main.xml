@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3288CA"
+    android:background="#36D6E0"
     tools:context=".MainActivity">
 
     <ImageView
@@ -36,12 +36,12 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
-            android:background="#FFFFFF"
+            android:background="@drawable/delinieado"
             android:ems="10"
-            android:hint="Nombre de Usuario"
+            android:hint="Correo electrónico"
             android:inputType="text"
             android:paddingLeft="15dp"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             android:textColorHint="#8A7777" />
 
         <EditText
@@ -49,12 +49,12 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
-            android:background="#FFFFFF"
+            android:background="@drawable/delinieado"
             android:ems="10"
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:paddingLeft="15dp"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             android:textColorHint="#8A7777" />
     </LinearLayout>
 
@@ -64,30 +64,17 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#075490"
         android:onClick="menu_principal"
+        android:padding="10dp"
         android:text="Iniciar  Sesion"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        app:cornerRadius="0dp"
+        app:cornerRadius="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.645" />
-
-    <TextView
-        android:id="@+id/RecuperarContraseña"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Recuperar Contraseña"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintVertical_bias="0.594" />
 
     <Button
         android:id="@+id/button2"
@@ -95,16 +82,17 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#075490"
         android:onClick="registrar"
+        android:padding="10dp"
         android:text="Registrar"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:cornerRadius="0dp"
+        app:cornerRadius="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.733" />
+        app:layout_constraintVertical_bias="0.717" />
 
     <ImageView
         android:id="@+id/imageView7"
